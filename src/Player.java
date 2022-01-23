@@ -6,7 +6,7 @@ public class Player {
     Player() {
         this.lives = 20;
         this.field = new Field();
-        field.newShip(4);
+        field.newShip(4); //TODO добавить цикл
         field.newShip(3);
         field.newShip(3);
         field.newShip(2);

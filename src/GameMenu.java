@@ -32,7 +32,7 @@ public class GameMenu {
                     }
                 }
             } else {
-                System.out.println("Машина победила");
+                System.out.println("Машина победила");//TODO проверить работу проверки победы
                 break;
             }
 

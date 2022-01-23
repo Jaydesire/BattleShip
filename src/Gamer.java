@@ -11,7 +11,7 @@ public class Gamer extends Player {
 
         player.field.print(true);
         System.out.print("Ваш ход (например: " +((char)(1072+Math.random() * (GameMenu.FIELD_SIZE)))+ ((int)(Math.random() * (GameMenu.FIELD_SIZE)+1)) +"): >> ");
-        String str = Main.scanner.nextLine();
+        String str = Main.scanner.nextLine();//TODO дописать исключение на ошибку ввода
         System.out.println(str);
         char xChar = str.charAt(0);
         int y = xChar - 1072;

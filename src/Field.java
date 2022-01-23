@@ -45,7 +45,7 @@ public class Field {
                 }
                 if ((cPrint == '▶' || cPrint == '▲') //Туман войны
                         && fogOfWar) {
-                    cPrint = '_';
+                    cPrint = '_';//TODO Заменять черные треугольники на квадраты пока не утонет корабль
                 }
                 System.out.printf(" %c ", cPrint);
             }
@@ -53,7 +53,8 @@ public class Field {
         }
     }
 
-    public boolean newShip(int size) {
+    public boolean newShip(int size) { //TODO возвращать ArrayList с координатами нового корабля
+        //TODO добавить проверку ArrayList на соответствие попадания, если потопил, обводим поле '✕', рисуем направление корабля
         boolean freeChar = false;
         int randomInt1;
         int randomInt2;
